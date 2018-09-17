@@ -23,7 +23,7 @@ class Hangman:
         self.word_underscored = ["_"] * len(self.word)
         self.guess = ""
         self.guessed = "GUESSES: "
-        self.photo = PhotoImage(file="/home/jddelia/python/Tkinter/Hangman/images/hangman01.png")
+        self.photo = PhotoImage(file="images/hangman01.png")
 
         # Canvas where image will be put.
         self.canvas = Canvas(root, width=600, height=500)
@@ -65,13 +65,13 @@ class Hangman:
     def change_image(self):
         """ This function updates the image based
             on strikes. """
-        image_lst = ["/home/jddelia/python/Tkinter/Hangman/images/hangman01.png",
-                    "/home/jddelia/python/Tkinter/Hangman/images/hangman02.png",
-                    "/home/jddelia/python/Tkinter/Hangman/images/hangman03.png",
-                    "/home/jddelia/python/Tkinter/Hangman/images/hangman04.png",
-                    "/home/jddelia/python/Tkinter/Hangman/images/hangman05.png",
-                    "/home/jddelia/python/Tkinter/Hangman/images/hangman06.png",
-                    "/home/jddelia/python/Tkinter/Hangman/images/hangman07.png"]
+        image_lst = ["images/hangman01.png",
+                    "images/hangman02.png",
+                    "images/hangman03.png",
+                    "images/hangman04.png",
+                    "images/hangman05.png",
+                    "images/hangman06.png",
+                    "images/hangman07.png"]
         self.strikes = self.strikes % len(image_lst)
         self.photo = PhotoImage(file=image_lst[self.strikes])
         self.canvas.create_image(340, 240, image=self.photo)
