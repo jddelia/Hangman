@@ -11,7 +11,7 @@ class Hangman:
     def __init__(self, root):
         """ Populate WORD LIST with words from
             txt file. """
-        with  open("/home/jddelia/python/Tkinter/Hangman/words.txt") as fp:
+        with  open("words.txt") as fp:
             for word in fp:
                 self.WORD_LIST.append(word.strip())
 
