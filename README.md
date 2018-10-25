@@ -10,5 +10,4 @@ To install, simply enter:
 ```
 git clone https://github.com/jddelia/hangman
 cd hangman
-python hangman.py
 ```
